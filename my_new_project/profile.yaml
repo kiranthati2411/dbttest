@@ -1,0 +1,13 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      user: "kiranthati"
+      password: "Wipro@1357"
+      role: "admin"
+      database: "demo_db"
+      warehouse: "compute_wh"
+      schema: "jaffle_shop"
+      threads: 8
+      client_session_keep_alive: False

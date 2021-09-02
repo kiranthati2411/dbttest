@@ -1,1 +1,17 @@
 Demo repo for running sample DBT project
+snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: "snowflake"
+      account: "sf15996.ap-south-1.aws"
+      user: "KIRANTHATI"
+      password: "Wipro@1357"
+      role: "ACCOUNTADMIN"
+      database: "demo_db"
+      warehouse: "COMPUTE_WH"
+      schema: "jaffle_shop"
+      threads: 1
+      client_session_keep_alive: False
+	  
+content to be used in profiles.yml for running demo project

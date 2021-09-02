@@ -1,0 +1,374 @@
+2021-09-02 12:32:20.792391 (MainThread): Running with dbt=0.20.1
+2021-09-02 12:32:21.365435 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\Kiran_Thati\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-09-02 12:32:21.365435 (MainThread): Tracking: tracking
+2021-09-02 12:32:21.366436 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB57D5E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB6BE7B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB6BE72E0>]}
+2021-09-02 12:32:21.375431 (MainThread): Partial parsing not enabled
+2021-09-02 12:32:21.397448 (MainThread): Parsing macros\adapters.sql
+2021-09-02 12:32:21.422395 (MainThread): Parsing macros\catalog.sql
+2021-09-02 12:32:21.424394 (MainThread): Parsing macros\materializations\incremental.sql
+2021-09-02 12:32:21.431394 (MainThread): Parsing macros\materializations\merge.sql
+2021-09-02 12:32:21.432394 (MainThread): Parsing macros\materializations\table.sql
+2021-09-02 12:32:21.435393 (MainThread): Parsing macros\materializations\view.sql
+2021-09-02 12:32:21.436394 (MainThread): Parsing macros\core.sql
+2021-09-02 12:32:21.439393 (MainThread): Parsing macros\adapters\common.sql
+2021-09-02 12:32:21.476394 (MainThread): Parsing macros\etc\datetime.sql
+2021-09-02 12:32:21.483394 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2021-09-02 12:32:21.484394 (MainThread): Parsing macros\etc\get_custom_database.sql
+2021-09-02 12:32:21.485394 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2021-09-02 12:32:21.486394 (MainThread): Parsing macros\etc\is_incremental.sql
+2021-09-02 12:32:21.487394 (MainThread): Parsing macros\etc\query.sql
+2021-09-02 12:32:21.488394 (MainThread): Parsing macros\materializations\helpers.sql
+2021-09-02 12:32:21.496394 (MainThread): Parsing macros\materializations\test.sql
+2021-09-02 12:32:21.501394 (MainThread): Parsing macros\materializations\common\merge.sql
+2021-09-02 12:32:21.513419 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2021-09-02 12:32:21.514440 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2021-09-02 12:32:21.520434 (MainThread): Parsing macros\materializations\seed\seed.sql
+2021-09-02 12:32:21.535435 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2021-09-02 12:32:21.558434 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2021-09-02 12:32:21.559393 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2021-09-02 12:32:21.572394 (MainThread): Parsing macros\materializations\table\table.sql
+2021-09-02 12:32:21.577390 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2021-09-02 12:32:21.581390 (MainThread): Parsing macros\materializations\view\view.sql
+2021-09-02 12:32:21.585390 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2021-09-02 12:32:21.587390 (MainThread): Parsing macros\schema_tests\not_null.sql
+2021-09-02 12:32:21.588391 (MainThread): Parsing macros\schema_tests\relationships.sql
+2021-09-02 12:32:21.589390 (MainThread): Parsing macros\schema_tests\unique.sql
+2021-09-02 12:32:21.722394 (MainThread): Acquiring new snowflake connection "model.demo_dbt.my_first_dbt_model".
+2021-09-02 12:32:21.730395 (MainThread): Acquiring new snowflake connection "model.demo_dbt.my_second_dbt_model".
+2021-09-02 12:32:21.751393 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-02 12:32:21.752400 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-02 12:32:21.754394 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-02 12:32:21.755394 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-02 12:32:21.767391 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '465c33df-8f66-45eb-8fff-6fe8010b6deb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB6D21940>]}
+2021-09-02 12:32:21.770393 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-02 12:32:21.771391 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '465c33df-8f66-45eb-8fff-6fe8010b6deb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB6D213A0>]}
+2021-09-02 12:32:21.771391 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-09-02 12:32:21.772390 (MainThread): 
+2021-09-02 12:32:21.773396 (MainThread): Acquiring new snowflake connection "master".
+2021-09-02 12:32:21.774431 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_demo_db".
+2021-09-02 12:32:21.784433 (ThreadPoolExecutor-0_0): Using snowflake connection "list_demo_db".
+2021-09-02 12:32:21.784433 (ThreadPoolExecutor-0_0): On list_demo_db: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_demo_db"} */
+
+    show terse schemas in database demo_db
+    limit 10000
+2021-09-02 12:32:21.784433 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-02 12:32:22.545211 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 0.76 seconds
+2021-09-02 12:32:22.551192 (ThreadPoolExecutor-0_0): On list_demo_db: Close
+2021-09-02 12:32:22.654690 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "create_demo_db_jaffle_shop".
+2021-09-02 12:32:22.654690 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "create_demo_db_jaffle_shop".
+2021-09-02 12:32:22.654690 (ThreadPoolExecutor-0_0): Creating schema "demo_db.jaffle_shop"
+2021-09-02 12:32:22.658691 (ThreadPoolExecutor-0_0): Using snowflake connection "create_demo_db_jaffle_shop".
+2021-09-02 12:32:22.658691 (ThreadPoolExecutor-0_0): On create_demo_db_jaffle_shop: BEGIN
+2021-09-02 12:32:22.658691 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state closed
+2021-09-02 12:32:23.236693 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 1 in 0.58 seconds
+2021-09-02 12:32:23.237689 (ThreadPoolExecutor-0_0): Using snowflake connection "create_demo_db_jaffle_shop".
+2021-09-02 12:32:23.237689 (ThreadPoolExecutor-0_0): On create_demo_db_jaffle_shop: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "create_demo_db_jaffle_shop"} */
+create schema if not exists demo_db.jaffle_shop
+2021-09-02 12:32:23.355921 (ThreadPoolExecutor-0_0): Snowflake query id: 019eadf0-0000-17f3-0000-0001c77e336d
+2021-09-02 12:32:23.355921 (ThreadPoolExecutor-0_0): Snowflake error: 003041 (42710): SQL compilation error:
+Schema 'JAFFLE_SHOP' already exists, but current role has no privileges on it. If this is unexpected and you cannot resolve this problem, contact your system administrator. ACCOUNTADMIN role may be required to manage the privileges on the object.
+2021-09-02 12:32:23.355921 (ThreadPoolExecutor-0_0): Error running SQL: macro create_schema
+2021-09-02 12:32:23.355921 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-09-02 12:32:23.355921 (ThreadPoolExecutor-0_0): On create_demo_db_jaffle_shop: ROLLBACK
+2021-09-02 12:32:23.467701 (ThreadPoolExecutor-0_0): On create_demo_db_jaffle_shop: Close
+2021-09-02 12:32:23.587479 (MainThread): Connection 'master' was properly closed.
+2021-09-02 12:32:23.588522 (MainThread): Connection 'create_demo_db_jaffle_shop' was properly closed.
+2021-09-02 12:32:23.588522 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB6D211F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB6C24100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB6D08850>]}
+2021-09-02 12:32:23.589516 (MainThread): Flushing usage events
+2021-09-02 12:32:24.547208 (MainThread): Encountered an error:
+2021-09-02 12:32:24.548197 (MainThread): Database Error
+  003041 (42710): SQL compilation error:
+  Schema 'JAFFLE_SHOP' already exists, but current role has no privileges on it. If this is unexpected and you cannot resolve this problem, contact your system administrator. ACCOUNTADMIN role may be required to manage the privileges on the object.
+2021-09-02 12:32:24.558148 (MainThread): Traceback (most recent call last):
+  File "c:\python\lib\site-packages\dbt\adapters\snowflake\connections.py", line 179, in exception_handler
+    yield
+  File "c:\python\lib\site-packages\dbt\adapters\sql\connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "c:\python\lib\site-packages\snowflake\connector\cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "c:\python\lib\site-packages\snowflake\connector\errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "c:\python\lib\site-packages\snowflake\connector\errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 003041 (42710): SQL compilation error:
+Schema 'JAFFLE_SHOP' already exists, but current role has no privileges on it. If this is unexpected and you cannot resolve this problem, contact your system administrator. ACCOUNTADMIN role may be required to manage the privileges on the object.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\python\lib\site-packages\dbt\main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\python\lib\site-packages\dbt\main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\python\lib\site-packages\dbt\main.py", line 256, in run_from_args
+    results = task.run()
+  File "c:\python\lib\site-packages\dbt\task\runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "c:\python\lib\site-packages\dbt\task\runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "c:\python\lib\site-packages\dbt\task\run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "c:\python\lib\site-packages\dbt\task\runnable.py", line 536, in create_schemas
+    create_future.result()
+  File "c:\python\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "c:\python\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "c:\python\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\python\lib\site-packages\dbt\utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "c:\python\lib\site-packages\dbt\task\runnable.py", line 499, in create_schema
+    adapter.create_schema(relation)
+  File "c:\python\lib\site-packages\dbt\adapters\sql\impl.py", line 182, in create_schema
+    self.execute_macro(CREATE_SCHEMA_MACRO_NAME, kwargs=kwargs)
+  File "c:\python\lib\site-packages\dbt\adapters\base\impl.py", line 1002, in execute_macro
+    result = macro_function(**kwargs)
+  File "c:\python\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\python\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\python\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\python\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 19, in macro
+  File "c:\python\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\python\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\python\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\python\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\python\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\python\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 28, in macro
+  File "c:\python\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\python\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\python\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\python\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\python\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\python\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "c:\python\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\python\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\python\lib\site-packages\dbt\adapters\base\impl.py", line 227, in execute
+    return self.connections.execute(
+  File "c:\python\lib\site-packages\dbt\adapters\sql\connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "c:\python\lib\site-packages\dbt\adapters\snowflake\connections.py", line 333, in add_query
+    connection, cursor = super().add_query(
+  File "c:\python\lib\site-packages\dbt\adapters\sql\connections.py", line 87, in add_query
+    return connection, cursor
+  File "c:\python\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "c:\python\lib\site-packages\dbt\adapters\snowflake\connections.py", line 196, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  003041 (42710): SQL compilation error:
+  Schema 'JAFFLE_SHOP' already exists, but current role has no privileges on it. If this is unexpected and you cannot resolve this problem, contact your system administrator. ACCOUNTADMIN role may be required to manage the privileges on the object.
+
+2021-09-02 12:33:09.231239 (MainThread): Running with dbt=0.20.1
+2021-09-02 12:33:09.783337 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\Kiran_Thati\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-09-02 12:33:09.783337 (MainThread): Tracking: tracking
+2021-09-02 12:33:09.783337 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019636C35A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001963804AFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001963804A4F0>]}
+2021-09-02 12:33:09.791331 (MainThread): Partial parsing not enabled
+2021-09-02 12:33:09.811291 (MainThread): Parsing macros\adapters.sql
+2021-09-02 12:33:09.834294 (MainThread): Parsing macros\catalog.sql
+2021-09-02 12:33:09.835294 (MainThread): Parsing macros\materializations\incremental.sql
+2021-09-02 12:33:09.842294 (MainThread): Parsing macros\materializations\merge.sql
+2021-09-02 12:33:09.844295 (MainThread): Parsing macros\materializations\table.sql
+2021-09-02 12:33:09.846294 (MainThread): Parsing macros\materializations\view.sql
+2021-09-02 12:33:09.847294 (MainThread): Parsing macros\core.sql
+2021-09-02 12:33:09.850294 (MainThread): Parsing macros\adapters\common.sql
+2021-09-02 12:33:09.885294 (MainThread): Parsing macros\etc\datetime.sql
+2021-09-02 12:33:09.891294 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2021-09-02 12:33:09.892295 (MainThread): Parsing macros\etc\get_custom_database.sql
+2021-09-02 12:33:09.893295 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2021-09-02 12:33:09.894295 (MainThread): Parsing macros\etc\is_incremental.sql
+2021-09-02 12:33:09.895295 (MainThread): Parsing macros\etc\query.sql
+2021-09-02 12:33:09.896294 (MainThread): Parsing macros\materializations\helpers.sql
+2021-09-02 12:33:09.903294 (MainThread): Parsing macros\materializations\test.sql
+2021-09-02 12:33:09.908294 (MainThread): Parsing macros\materializations\common\merge.sql
+2021-09-02 12:33:09.919294 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2021-09-02 12:33:09.920294 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2021-09-02 12:33:09.926294 (MainThread): Parsing macros\materializations\seed\seed.sql
+2021-09-02 12:33:09.941294 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2021-09-02 12:33:09.964345 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2021-09-02 12:33:09.965338 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2021-09-02 12:33:09.977336 (MainThread): Parsing macros\materializations\table\table.sql
+2021-09-02 12:33:09.982291 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2021-09-02 12:33:09.985336 (MainThread): Parsing macros\materializations\view\view.sql
+2021-09-02 12:33:09.990341 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2021-09-02 12:33:09.991336 (MainThread): Parsing macros\schema_tests\not_null.sql
+2021-09-02 12:33:09.992291 (MainThread): Parsing macros\schema_tests\relationships.sql
+2021-09-02 12:33:09.993337 (MainThread): Parsing macros\schema_tests\unique.sql
+2021-09-02 12:33:10.117336 (MainThread): Acquiring new snowflake connection "model.demo_dbt.my_first_dbt_model".
+2021-09-02 12:33:10.125337 (MainThread): Acquiring new snowflake connection "model.demo_dbt.my_second_dbt_model".
+2021-09-02 12:33:10.145336 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-02 12:33:10.147336 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-02 12:33:10.148337 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-02 12:33:10.150336 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-02 12:33:10.160339 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'eac492af-68fd-4ae1-b88f-d3714a473450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019638169EE0>]}
+2021-09-02 12:33:10.164337 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-02 12:33:10.165293 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'eac492af-68fd-4ae1-b88f-d3714a473450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019638169520>]}
+2021-09-02 12:33:10.165293 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-09-02 12:33:10.166199 (MainThread): 
+2021-09-02 12:33:10.167208 (MainThread): Acquiring new snowflake connection "master".
+2021-09-02 12:33:10.168251 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_demo_db".
+2021-09-02 12:33:10.178252 (ThreadPoolExecutor-0_0): Using snowflake connection "list_demo_db".
+2021-09-02 12:33:10.178252 (ThreadPoolExecutor-0_0): On list_demo_db: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_demo_db"} */
+
+    show terse schemas in database demo_db
+    limit 10000
+2021-09-02 12:33:10.178252 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-02 12:33:10.843634 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 4 in 0.66 seconds
+2021-09-02 12:33:10.846629 (ThreadPoolExecutor-0_0): On list_demo_db: Close
+2021-09-02 12:33:10.951575 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_demo_db_jaffle_shop".
+2021-09-02 12:33:10.970577 (ThreadPoolExecutor-1_0): Using snowflake connection "list_demo_db_jaffle_shop".
+2021-09-02 12:33:10.971616 (ThreadPoolExecutor-1_0): On list_demo_db_jaffle_shop: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_demo_db_jaffle_shop"} */
+
+    show terse objects in demo_db.jaffle_shop
+2021-09-02 12:33:10.971616 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-09-02 12:33:11.423027 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 0.45 seconds
+2021-09-02 12:33:11.425000 (ThreadPoolExecutor-1_0): On list_demo_db_jaffle_shop: Close
+2021-09-02 12:33:11.538789 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_demo_db_jaffle_shop_dbt_test__audit".
+2021-09-02 12:33:11.541780 (ThreadPoolExecutor-1_0): Using snowflake connection "list_demo_db_jaffle_shop_dbt_test__audit".
+2021-09-02 12:33:11.541780 (ThreadPoolExecutor-1_0): On list_demo_db_jaffle_shop_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_demo_db_jaffle_shop_dbt_test__audit"} */
+
+    show terse objects in demo_db.jaffle_shop_dbt_test__audit
+2021-09-02 12:33:11.541780 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-09-02 12:33:12.112574 (ThreadPoolExecutor-1_0): Snowflake query id: 019eadf1-0000-17f1-0000-0001c77e23d9
+2021-09-02 12:33:12.112574 (ThreadPoolExecutor-1_0): Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+2021-09-02 12:33:12.112574 (ThreadPoolExecutor-1_0): Error running SQL: macro list_relations_without_caching
+2021-09-02 12:33:12.112574 (ThreadPoolExecutor-1_0): Rolling back transaction.
+2021-09-02 12:33:12.113634 (ThreadPoolExecutor-1_0): On list_demo_db_jaffle_shop_dbt_test__audit: Close
+2021-09-02 12:33:12.218720 (MainThread): Using snowflake connection "master".
+2021-09-02 12:33:12.219733 (MainThread): On master: BEGIN
+2021-09-02 12:33:12.219733 (MainThread): Opening a new connection, currently in state init
+2021-09-02 12:33:12.637416 (MainThread): SQL status: SUCCESS 1 in 0.42 seconds
+2021-09-02 12:33:12.638417 (MainThread): On master: COMMIT
+2021-09-02 12:33:12.638417 (MainThread): Using snowflake connection "master".
+2021-09-02 12:33:12.638417 (MainThread): On master: COMMIT
+2021-09-02 12:33:12.763640 (MainThread): SQL status: SUCCESS 1 in 0.12 seconds
+2021-09-02 12:33:12.763640 (MainThread): On master: Close
+2021-09-02 12:33:12.867093 (MainThread): 18:03:12 | Concurrency: 1 threads (target='dev')
+2021-09-02 12:33:12.867093 (MainThread): 18:03:12 | 
+2021-09-02 12:33:12.869601 (Thread-1): Began running node model.demo_dbt.my_first_dbt_model
+2021-09-02 12:33:12.870655 (Thread-1): 18:03:12 | 1 of 2 START table model jaffle_shop.my_first_dbt_model.............. [RUN]
+2021-09-02 12:33:12.870655 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.my_first_dbt_model".
+2021-09-02 12:33:12.870655 (Thread-1): Compiling model.demo_dbt.my_first_dbt_model
+2021-09-02 12:33:12.873658 (Thread-1): Writing injected SQL for node "model.demo_dbt.my_first_dbt_model"
+2021-09-02 12:33:12.877661 (Thread-1): finished collecting timing info
+2021-09-02 12:33:12.903656 (Thread-1): Writing runtime SQL for node "model.demo_dbt.my_first_dbt_model"
+2021-09-02 12:33:12.905617 (Thread-1): Using snowflake connection "model.demo_dbt.my_first_dbt_model".
+2021-09-02 12:33:12.905617 (Thread-1): On model.demo_dbt.my_first_dbt_model: BEGIN
+2021-09-02 12:33:12.905617 (Thread-1): Opening a new connection, currently in state init
+2021-09-02 12:33:13.278098 (Thread-1): SQL status: SUCCESS 1 in 0.37 seconds
+2021-09-02 12:33:13.278098 (Thread-1): Using snowflake connection "model.demo_dbt.my_first_dbt_model".
+2021-09-02 12:33:13.279097 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+
+
+      create or replace transient table demo_db.jaffle_shop.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-09-02 12:33:15.033254 (Thread-1): SQL status: SUCCESS 1 in 1.75 seconds
+2021-09-02 12:33:15.035313 (Thread-1): On model.demo_dbt.my_first_dbt_model: COMMIT
+2021-09-02 12:33:15.036288 (Thread-1): Using snowflake connection "model.demo_dbt.my_first_dbt_model".
+2021-09-02 12:33:15.036288 (Thread-1): On model.demo_dbt.my_first_dbt_model: COMMIT
+2021-09-02 12:33:15.102179 (Thread-1): SQL status: SUCCESS 1 in 0.07 seconds
+2021-09-02 12:33:15.125166 (Thread-1): finished collecting timing info
+2021-09-02 12:33:15.125166 (Thread-1): On model.demo_dbt.my_first_dbt_model: Close
+2021-09-02 12:33:15.226270 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eac492af-68fd-4ae1-b88f-d3714a473450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001963811D1F0>]}
+2021-09-02 12:33:15.228275 (Thread-1): 18:03:15 | 1 of 2 OK created table model jaffle_shop.my_first_dbt_model......... [SUCCESS 1 in 2.36s]
+2021-09-02 12:33:15.230011 (Thread-1): Finished running node model.demo_dbt.my_first_dbt_model
+2021-09-02 12:33:15.232057 (Thread-1): Began running node model.demo_dbt.my_second_dbt_model
+2021-09-02 12:33:15.233056 (Thread-1): 18:03:15 | 2 of 2 START view model jaffle_shop.my_second_dbt_model.............. [RUN]
+2021-09-02 12:33:15.234042 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.my_second_dbt_model".
+2021-09-02 12:33:15.234042 (Thread-1): Compiling model.demo_dbt.my_second_dbt_model
+2021-09-02 12:33:15.237074 (Thread-1): Writing injected SQL for node "model.demo_dbt.my_second_dbt_model"
+2021-09-02 12:33:15.238077 (Thread-1): finished collecting timing info
+2021-09-02 12:33:15.251074 (Thread-1): Writing runtime SQL for node "model.demo_dbt.my_second_dbt_model"
+2021-09-02 12:33:15.252075 (Thread-1): Using snowflake connection "model.demo_dbt.my_second_dbt_model".
+2021-09-02 12:33:15.252075 (Thread-1): On model.demo_dbt.my_second_dbt_model: BEGIN
+2021-09-02 12:33:15.252075 (Thread-1): Opening a new connection, currently in state closed
+2021-09-02 12:33:15.612462 (Thread-1): SQL status: SUCCESS 1 in 0.36 seconds
+2021-09-02 12:33:15.612462 (Thread-1): Using snowflake connection "model.demo_dbt.my_second_dbt_model".
+2021-09-02 12:33:15.612462 (Thread-1): On model.demo_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.my_second_dbt_model"} */
+
+  create or replace  view demo_db.jaffle_shop.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from demo_db.jaffle_shop.my_first_dbt_model
+where id = 1
+  );
+2021-09-02 12:33:15.820483 (Thread-1): SQL status: SUCCESS 1 in 0.21 seconds
+2021-09-02 12:33:15.821475 (Thread-1): On model.demo_dbt.my_second_dbt_model: COMMIT
+2021-09-02 12:33:15.821475 (Thread-1): Using snowflake connection "model.demo_dbt.my_second_dbt_model".
+2021-09-02 12:33:15.821475 (Thread-1): On model.demo_dbt.my_second_dbt_model: COMMIT
+2021-09-02 12:33:15.886553 (Thread-1): SQL status: SUCCESS 1 in 0.07 seconds
+2021-09-02 12:33:15.888551 (Thread-1): finished collecting timing info
+2021-09-02 12:33:15.889509 (Thread-1): On model.demo_dbt.my_second_dbt_model: Close
+2021-09-02 12:33:15.999771 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eac492af-68fd-4ae1-b88f-d3714a473450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019638433400>]}
+2021-09-02 12:33:15.999771 (Thread-1): 18:03:15 | 2 of 2 OK created view model jaffle_shop.my_second_dbt_model......... [SUCCESS 1 in 0.77s]
+2021-09-02 12:33:16.000771 (Thread-1): Finished running node model.demo_dbt.my_second_dbt_model
+2021-09-02 12:33:16.001770 (MainThread): Acquiring new snowflake connection "master".
+2021-09-02 12:33:16.002771 (MainThread): Using snowflake connection "master".
+2021-09-02 12:33:16.002771 (MainThread): On master: BEGIN
+2021-09-02 12:33:16.002771 (MainThread): Opening a new connection, currently in state closed
+2021-09-02 12:33:16.583198 (MainThread): SQL status: SUCCESS 1 in 0.58 seconds
+2021-09-02 12:33:16.583198 (MainThread): On master: COMMIT
+2021-09-02 12:33:16.583198 (MainThread): Using snowflake connection "master".
+2021-09-02 12:33:16.584230 (MainThread): On master: COMMIT
+2021-09-02 12:33:16.704540 (MainThread): SQL status: SUCCESS 1 in 0.12 seconds
+2021-09-02 12:33:16.705541 (MainThread): On master: Close
+2021-09-02 12:33:17.825033 (MainThread): 18:03:17 | 
+2021-09-02 12:33:17.825953 (MainThread): 18:03:17 | Finished running 1 table model, 1 view model in 7.66s.
+2021-09-02 12:33:17.825953 (MainThread): Connection 'master' was properly closed.
+2021-09-02 12:33:17.825953 (MainThread): Connection 'list_demo_db' was properly closed.
+2021-09-02 12:33:17.825953 (MainThread): Connection 'list_demo_db_jaffle_shop_dbt_test__audit' was properly closed.
+2021-09-02 12:33:17.825953 (MainThread): Connection 'model.demo_dbt.my_second_dbt_model' was properly closed.
+2021-09-02 12:33:17.830953 (MainThread): 
+2021-09-02 12:33:17.830953 (MainThread): Completed successfully
+2021-09-02 12:33:17.831953 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-09-02 12:33:17.832955 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019636C35A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196380EC2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196380EC5E0>]}
+2021-09-02 12:33:17.832955 (MainThread): Flushing usage events
